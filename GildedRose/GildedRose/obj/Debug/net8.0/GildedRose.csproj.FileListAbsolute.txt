@@ -1,0 +1,12 @@
+C:\Code\Git\CodeKata-GildedRose\GildedRose\GildedRose\bin\Debug\net8.0\GildedRose.deps.json
+C:\Code\Git\CodeKata-GildedRose\GildedRose\GildedRose\bin\Debug\net8.0\GildedRose.dll
+C:\Code\Git\CodeKata-GildedRose\GildedRose\GildedRose\bin\Debug\net8.0\GildedRose.pdb
+C:\Code\Git\CodeKata-GildedRose\GildedRose\GildedRose\obj\Debug\net8.0\GildedRose.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code\Git\CodeKata-GildedRose\GildedRose\GildedRose\obj\Debug\net8.0\GildedRose.AssemblyInfoInputs.cache
+C:\Code\Git\CodeKata-GildedRose\GildedRose\GildedRose\obj\Debug\net8.0\GildedRose.AssemblyInfo.cs
+C:\Code\Git\CodeKata-GildedRose\GildedRose\GildedRose\obj\Debug\net8.0\GildedRose.csproj.CoreCompileInputs.cache
+C:\Code\Git\CodeKata-GildedRose\GildedRose\GildedRose\obj\Debug\net8.0\GildedRose.sourcelink.json
+C:\Code\Git\CodeKata-GildedRose\GildedRose\GildedRose\obj\Debug\net8.0\GildedRose.dll
+C:\Code\Git\CodeKata-GildedRose\GildedRose\GildedRose\obj\Debug\net8.0\refint\GildedRose.dll
+C:\Code\Git\CodeKata-GildedRose\GildedRose\GildedRose\obj\Debug\net8.0\GildedRose.pdb
+C:\Code\Git\CodeKata-GildedRose\GildedRose\GildedRose\obj\Debug\net8.0\ref\GildedRose.dll
