@@ -233,7 +233,7 @@ public class Tests
 
         var result = gildedRose.Items;
 
-        result.ForEach(i =>
+        foreach (var i in result)
         {
             switch (i.Name)
             {
@@ -275,7 +275,7 @@ public class Tests
                     }
             }
 
-        });
+        };
     }
 
     [Test]

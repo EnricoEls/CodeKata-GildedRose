@@ -2,17 +2,18 @@
 {
     public class GildedRose
     {
-        public List<Item> Items = new List<Item>();
-        public GildedRose(List<Item> items) 
+        public IList<Item> Items = new List<Item>();
+        public GildedRose(IList<Item> items) 
         { 
             Items = items;
         }
 
         public void UpdateQuality()
         {
-            Items.ForEach(item => {
+            foreach (Item item in Items)
+            {
                 item.Process();
-            });
+            }
         }
     }
 }
