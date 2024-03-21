@@ -2,24 +2,22 @@
 {
     public class GildedRose
     {
-        public List<Item> Items = new List<Item>();
-        public GildedRose(List<Item> items) 
+        public IList<Item> Items = new List<Item>();
+        public GildedRose(IList<Item> items) 
         { 
             Items = items;
         }
 
         public void UpdateQuality()
         {
-            Items.ForEach(item => {
-                if (item.Name.Equals("Sulfuras, Hand of Ragnaros"))
-                {
-                    return;
-                }
+            foreach (Item item in Items) 
+            { 
+                if (item.Name.Equals("Sulfuras, Hand of Ragnaros")) { continue; }
 
                 CalculateItemQualityChange(item);                
 
                 item.SellIn--;
-            });
+            };
         }
 
         public void CalculateItemQualityChange(Item item)
@@ -40,15 +38,9 @@
                     break;
             }
 
-            if (item.Quality < 0)
-            {
-                item.Quality = 0;
-            }
+            if (item.Quality < 0) { item.Quality = 0; }
 
-            if (item.Quality > 50)
-            {
-                item.Quality = 50;
-            }
+            if (item.Quality > 50) { item.Quality = 50; }
         }
 
         private void SetGeneralItemQuality(Item item)
