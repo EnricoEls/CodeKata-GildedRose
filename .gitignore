@@ -4,3 +4,6 @@
 
 /.vs
 /GildedRose/.vs
+/GildedRose/GildedRose/obj/Release/net8.0
+/GildedRose/GildedRose.Tests/bin/Release/net8.0
+/GildedRose/GildedRose.Tests/obj/Release/net8.0
