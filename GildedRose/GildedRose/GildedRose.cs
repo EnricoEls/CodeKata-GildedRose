@@ -32,23 +32,23 @@
                         break;
                 }
 
-                ValidateAndCorrectQuality(item);
+                ImplementQualityRestrictions(item);
 
                 item.SellIn--;
             });
         }
 
-        private int GetStandardDegradationAmount(int sellIn)
-        {
-            return sellIn < 0 ? 2 : 1;
-        }
-
         private void SetGeneralItemQuality(Item item)
         {
-            item.Quality -= GetStandardDegradationAmount(item.SellIn); 
+            item.Quality -= item.SellIn < 0 ? 2 : 1;
         }
 
-        private void ValidateAndCorrectQuality(Item item)
+        private void SetConjuredQuality(Item item)
+        {
+            item.Quality -= item.SellIn < 0 ? 4 : 2;
+        }
+
+        private void ImplementQualityRestrictions(Item item)
         {
             if (item.Quality < 0)
             {
@@ -59,11 +59,6 @@
             {
                 item.Quality = 50;
             }
-        }
-
-        private void SetConjuredQuality(Item item)
-        {
-            item.Quality -= GetStandardDegradationAmount(item.SellIn) * 2; 
         }
 
         private void SetBackStagePassQuality(Item item)
