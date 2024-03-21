@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GildedRose")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d769ccb04845f9e21ce17a6b5d7702a183a9a308")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f8dedf41a7d8aab1fe697279629bf53ccc91160")]
 [assembly: System.Reflection.AssemblyProductAttribute("GildedRose")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GildedRose")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

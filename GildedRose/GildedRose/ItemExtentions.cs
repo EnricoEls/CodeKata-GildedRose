@@ -26,13 +26,13 @@
                     item.SetAgedBrieQuality();
                     break;
                 case string name when name.StartsWith("Backstage passes"):
-                    SetBackStagePassQuality(item);
+                    item.SetBackStagePassQuality();
                     break;
                 case string name when name.StartsWith("Conjured"):
-                    SetConjuredQuality(item);
+                    item.SetConjuredQuality();
                     break;
                 default:
-                    SetGeneralItemQuality(item);
+                    item.SetGeneralItemQuality();
                     break;
             }
 
