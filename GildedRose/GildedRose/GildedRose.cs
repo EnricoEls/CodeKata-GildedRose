@@ -11,7 +11,7 @@
         public void UpdateQuality()
         {
             Items.ForEach(item => {
-                if (item.Name.StartsWith("Sulfuras"))
+                if (item.Name.Equals("Sulfuras, Hand of Ragnaros"))
                 {
                     return;
                 }
