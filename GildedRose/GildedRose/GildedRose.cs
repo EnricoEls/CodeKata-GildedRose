@@ -16,26 +16,39 @@
                     return;
                 }
 
-                switch (item.Name)
-                {
-                    case string name when name.StartsWith("Aged Brie"):
-                        SetAgedBrieQuality(item);
-                        break;
-                    case string name when name.StartsWith("Backstage passes"):
-                        SetBackStagePassQuality(item);
-                        break;
-                    case string name when name.StartsWith("Conjured"):
-                        SetConjuredQuality(item);
-                        break;
-                    default:
-                        SetGeneralItemQuality(item);
-                        break;
-                }
-
-                ImplementQualityRestrictions(item);
+                CalculateItemQualityChange(item);                
 
                 item.SellIn--;
             });
+        }
+
+        public void CalculateItemQualityChange(Item item)
+        {
+            switch (item.Name)
+            {
+                case string name when name.StartsWith("Aged Brie"):
+                    SetAgedBrieQuality(item);
+                    break;
+                case string name when name.StartsWith("Backstage passes"):
+                    SetBackStagePassQuality(item);
+                    break;
+                case string name when name.StartsWith("Conjured"):
+                    SetConjuredQuality(item);
+                    break;
+                default:
+                    SetGeneralItemQuality(item);
+                    break;
+            }
+
+            if (item.Quality < 0)
+            {
+                item.Quality = 0;
+            }
+
+            if (item.Quality > 50)
+            {
+                item.Quality = 50;
+            }
         }
 
         private void SetGeneralItemQuality(Item item)
@@ -46,19 +59,6 @@
         private void SetConjuredQuality(Item item)
         {
             item.Quality -= item.SellIn < 0 ? 4 : 2;
-        }
-
-        private void ImplementQualityRestrictions(Item item)
-        {
-            if (item.Quality < 0)
-            {
-                item.Quality = 0;
-            }
-
-            if (item.Quality > 50)
-            {
-                item.Quality = 50;
-            }
         }
 
         private void SetBackStagePassQuality(Item item)
