@@ -2,7 +2,7 @@
 {
     public class GildedRose
     {
-        public List<Item> Items { get; private set; }
+        public List<Item> Items = new List<Item>();
         public GildedRose(List<Item> items) 
         { 
             Items = items;
