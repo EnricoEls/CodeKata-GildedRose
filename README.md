@@ -1,3 +1,5 @@
+<img src="https://github.com/EnricoEls/CodeKata-GildedRose/blob/f39a75e24e9711aec046371710ea352c730ad30f/GildedRose/GildedRose/bannerImage.jpeg" style="width: 100%"/>
+
 # CodeKata-GildedRose
 Welcome to my solution to the GildedRose code kata. So first things first, what is the GildedRose? 
 The GildedRose is a general store in the World of Warcraft universe that sells everything frome basic items and potions to legendary items and concert tickets. The GildedRose has contacted us to optimize and update their code.
